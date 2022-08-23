@@ -1,58 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-import BodyComponent from './component/BodyComponent';
-import Navbar from './component/Navbar';
-import Content from './component/Content';
-import Footer from './component/Footer';
-import Parent from './component/Parent';
-import Greet from './component/Greet';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import BodyComponentFunc from './component/BodyComponentFunction';
-import Counter from './component/Counter';
-import Form from './component/Form';
-import { Component } from 'react';
-import { render } from '@testing-library/react';
-import List from './component/List';
-import FormList from './component/FormList';
-import FLGab from './component/From List/FLGab';
+// import { UserDetail } from "./component/card-photo/UserDetail"
+import { ReactDOM } from "react";
+import React from "react";
+import Geo from "./component/geolocation-state/GeoState";
+import GeoLifecycle from "./component/geolocation-state/GeoLifecycle";
+import FormValid from "./component/form-validation/form-valid";
+import UseFormik from "./component/form-validation/use-formik";
+// import { UserCard } from "./component/card-photo/UserCard";
+// import faker from "faker"
 
-class App extends Component {
-  constructor(props){
-    super(props)
-    this.state={
-      page: ' '
-    }
-  }
-
-  navigation = () => {
-    this.setState({
-      page : "1"
-    })
-  }
-
-  render() {
-    return (
-      <>
-      {/* <Navbar/>
-      <div style={{minHeight:'100vh'}}>
-        <Content/>
-      </div>
-      <Footer/> */}
-      {/* <BodyComponent lastName = 'Zakiyah'></BodyComponent>
-      <BodyComponentFunc firstName="Yayah"></BodyComponentFunc>
-       */}
-      {/* <Parent name='Yayah' age={2}/> */}
-      {/* <Greet/> */}
-      {/* <Counter default={2}/> */}
-      {/* {this.state.page === '' ? <Counter onNavigate = {this.navigation} default={2}/>
-      : <h1>Pindah</h1>} */}
-      {/* <Form/> */}
-      {/* <List/> */}
-      {/* <FormList/> */}
-      <FLGab/>
-      </>
-    );
-  }  
+const App = () => {
+    // return(
+    //   <div className="container">
+    //     <UserCard>
+    //       <UserDetail nama='Roy'
+    //       tanggalGabung = "7 Apr 2010"
+    //       alamat="Jl. Abc"
+    //       avatar={faker.image.avatar()}/>
+    //     </UserCard>
+    //     <UserCard>
+    //       <UserDetail nama='Aron'
+    //       tanggalGabung = "7 Jan 2010"
+    //       alamat="Jl. Def"
+    //       avatar={faker.image.avatar()}/>
+    //     </UserCard>
+    //   </div>
+    // )
+    
+    return(
+      // <Geo/>
+      // <GeoLifecycle/>
+      // <FormValid/>
+      <UseFormik/>
+    )
 }
 
 export default App;
